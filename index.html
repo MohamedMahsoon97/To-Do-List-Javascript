@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO TASK</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="crud-text">
+        <h2>TODO LIST Javascript</h2>
+    </div>
+    <div class="form">
+        <form action="javascript:void(0);" onsubmit="todoApp.Add()">
+            <input type="text" id="add-todo" placeholder="Things To-Do">
+            <input type="submit" value="Add">
+        </form>
+        <table class="table-counter">
+            <tr>
+                <th>You have</th>
+                <th id="counter"></th> 
+            </tr>
+        </table>
+        <table>
+            <tr class="to-do"> 
+                <th colspan="3"><h3>To-Do List</h3></th>
+            </tr>
+            <tbody id="tasks"></tbody>
+        </table>
+    </div>
+    <div id="edit-box">
+        <form action="javascript:void(0);" id="save-edit">
+            <input type="text"id="edit-todo" placeholder="Things To-Do">
+            <input type="submit" value="Save">
+            <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
+        </form>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
